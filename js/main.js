@@ -35,7 +35,7 @@ const renderSingleTask = function(name) {
 
 	editButton.addEventListener('click', function (evt) {
 		const text = prompt('Введите новый текст');
-		const task = evt.currentTarget.closest('.task');
+		const task = evt.currentTarget.closest('.task');                //здесь доработать, как вносить изменения в карточку
 		task.querySelector('.task__name').textContent = text;
 	});
 
